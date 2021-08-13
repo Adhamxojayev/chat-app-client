@@ -36,11 +36,14 @@ function renderTodos(todos) {
         let button = document.createElement('button')
         let span = document.createElement('span')
         
+
+        span.setAttribute('class','username')
         let id = window.localStorage.getItem('user_id')
         text.textContent = todo.todo_text
         time.textContent = todo.todo_time
         span.textContent = todo.username
         button.textContent = 'X' 
+        span.style.color = 'grey'
         button.style.display = 'none'  
         if(id == todo.user_id){
             li.style.display = 'flex'
@@ -50,8 +53,12 @@ function renderTodos(todos) {
             div.setAttribute('class','man')
             time.contentEditable = true
             text.contentEditable = true
+            span.textContent = 'you'
+            span.style.color = 'green'
+            span.classList.add ('username--friend');
         }
-        div.append(span)
+
+        li.append(span)
         div.append(text)
         div.append(time)
         li.append(div)
