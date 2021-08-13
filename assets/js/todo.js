@@ -16,7 +16,8 @@ form.onsubmit = async (event) => {
     event.preventDefault()
     let newTodo = {
         todo_text : todoInput.value,
-        todo_time : hours + ':' + min
+        todo_time : hours + ':' + min,
+        username : window.localStorage.getItem('username')
     }
     let res = await request('/todos', 'POST', newTodo, true)
     if(res.status == 201){
@@ -33,10 +34,12 @@ function renderTodos(todos) {
         let text = document.createElement('span')
         let time = document.createElement('span')
         let button = document.createElement('button')
+        let span = document.createElement('span')
         
         let id = window.localStorage.getItem('user_id')
         text.textContent = todo.todo_text
         time.textContent = todo.todo_time
+        span.textContent = todo.username
         button.textContent = 'X' 
         button.style.display = 'none'  
         if(id == todo.user_id){
@@ -48,6 +51,7 @@ function renderTodos(todos) {
             time.contentEditable = true
             text.contentEditable = true
         }
+        div.append(span)
         div.append(text)
         div.append(time)
         li.append(div)
