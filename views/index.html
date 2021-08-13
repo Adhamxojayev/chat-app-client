@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/todo.css">
+    <title>Todo</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1 class="h">User name: </h1>
+            <h1 id="nameUser"></h1>
+        </div>
+        <ul id="todoList">
+            
+        </ul>
+        <form id="form">
+
+            <input autocomplete="off" id="todoInput" maxlength="50" type="text" placeholder="Write a message..." required>
+            <button type="submit">send</button>
+        </form>
+        <div class="out">
+            <button id="logout">log out</button>
+        </div>
+    </div>
+    
+    <script src="./js/request.js"></script>
+    <script src="./js/todo.js"></script>
+</body>
+</html>

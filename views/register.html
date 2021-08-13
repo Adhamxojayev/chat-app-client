@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/auth.css">
+    <title>Register</title>
+</head>
+<body>
+    <div>
+        <h1>Register</h1>
+        <p id="errorMessage" style="height: 18px; font-size: 21px;"></p>
+        <form id="form">
+            <input id="userInput" type="text" placeholder="username" required>
+            <input id="passwordInput" type="password" placeholder="password" required>
+            <input id="contactInput" type="tel" placeholder="tel" required>
+            <input id="ageInput" type="number" placeholder="age" required>
+            <select id="gender">
+                <option value="1">erkak</option>
+                <option value="2">ayol</option>
+            </select>
+            <button type="submit">Log In</button>
+        </form>
+        <span>Have an account ?<a href="./login">Login</a>here</span>
+    </div>
+    <script src="./js/request.js"></script>
+    <script src="./js/register.js"></script>
+</body>
+</html>

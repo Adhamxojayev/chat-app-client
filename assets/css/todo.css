@@ -1,0 +1,152 @@
+body{
+  display: block;
+    background-color: #f2f2f2;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+#todoInput{
+    outline: none;
+    padding: 10px;
+}
+.wrapper form{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.wrapper form input:first-child{
+    flex-grow: 1;
+}
+form input,form button {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.todoList{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    
+}
+
+#todoList {
+    height: 700px;
+    overflow-y: scroll;
+}
+
+li span {
+    margin-right: 40px;
+}
+
+li span:last-child{
+    color: gray;
+    color: rgba(63, 63, 63, 0.562);
+    font-size: 14px;
+
+}
+li span:first-child{
+    font-family:sans-serif;
+    color: #fff;
+    color: dodgerblue;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+li button {
+    background-color: rgb(250, 114, 114);
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    transition: ease 0.3s;
+    border: none;
+    height: 16px;
+    width: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+li button:hover{
+    background-color: rgb(218, 0, 0);
+}
+form button {
+    width: 90px;
+    background-color: rgb(48, 182, 48);
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-family: sans-serif;
+    transition: ease 0.3s;
+}
+form button:hover{
+    background-color: green;
+}
+
+.header{
+    display: flex;
+}
+.h{
+    color: gray;
+}
+#nameUser{
+    color: rgb(58, 52, 52);
+    margin-left: 20px;
+    font-family: sans-serif;
+}
+
+#logout{
+    width: 100px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(85, 83, 83);
+    font-size: 17px;
+    border-radius: 5px;
+    margin-top: 50px;
+    transition: ease 0.4s;
+}
+#logout:hover{
+    background-color: red;
+}
+.man{
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 22px;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+    background-color: black;
+    margin-top: 20px;
+    background-color: #fff;
+    width: 400px;
+    box-shadow: 0px 1px  2px rgba(0,0,0, 0.8);
+}
+li div{
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 22px;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+    background-color: black;
+    margin-top: 20px;
+    background-color: #fff;
+    width: 400px;
+    box-shadow: 0px 1px  2px rgba(0,0,0, 0.8);
+}
+form{
+    margin-top: 25px;
+
+}

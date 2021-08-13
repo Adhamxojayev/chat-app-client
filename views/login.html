@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/auth.css">
+    <title>Login</title>
+</head>
+<body>
+    <div>
+        <h1>Login</h1>
+        <p id="errorMessage" style="height: 18px; font-size: 21px;"></p>
+        <form id="form">
+            <input id="userInput" type="text" placeholder="username" required>
+            <input id="passwordInput" type="password" placeholder="password" required>
+            <button type="submit">Log In</button>
+        </form>
+        <span>Not have an account?<a href="./register"> Register</a></span>
+    </div>
+    <script src="./js/request.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+</html>

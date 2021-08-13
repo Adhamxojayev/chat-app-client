@@ -1,0 +1,16 @@
+{
+  "name": "chat-front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "author": "Ahror",
+  "license": "ISC"
+}
